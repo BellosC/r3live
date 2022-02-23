@@ -1,0 +1,22 @@
+  
+ Useful commands i found after debugging the errors of catkin_make command of r3live repo.
+ I did all these and finally i managed to build succesfully.
+---------------------------------------------------------------------------------------
+
+  444  sudo apt-get install --reinstall ros-melodic-cv-bridge
+  445  catkin_make
+  446  sudo apt-get install --reinstall ros-melodic-eigen-conversions
+  447  catkin_make
+  448  sudo mv /usr/include/flann/ext/lz4.h /usr/include/flann/ext/lz4.h.bak
+  449  sudo mv /usr/include/flann/ext/lz4hc.h /usr/include/flann/ext/lz4.h.bak
+  450  sudo ln -s /usr/include/lz4.h /usr/include/flann/ext/lz4.h
+  451  sudo ln -s /usr/include/lz4hc.h /usr/include/flann/ext/lz4hc.h
+  452  catkin_make
+  453  sudo apt-get install --reinstall ros-melodic-pcl-conversions
+  454* 
+  455  sudo apt-get install --reinstall ros-melodic-visualization-msgs
+  456  catkin_make
+  457  history
+
+---------------------------------------------------------------------------------------
+
