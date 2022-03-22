@@ -1,0 +1,7 @@
+Otan pas na kaneis aftin tin egkatastasi: https://support.thinklucid.com/using-ros-for-linux/
+
+Vale kai afta prin trekseis to "catkin_make" gia na ginei to catkin_make:
+sudo apt install ros-melodic-image-common
+sudo apt-get install ros-melodic-diagnostics
+sudo apt-get install ros-melodic-roslint
+
